@@ -102,4 +102,15 @@ export default class hashMap {
     }
     return keys;
   }
+
+  values() {
+    const values = [];
+    for (let i = 0; i < this.#buckets.length; i++) {
+      for (let j = 0; j < this.#buckets[i].length; j++) {
+        const value = this.#buckets[i][j][1];
+        values.push(value);
+      }
+    }
+    return values;
+  }
 }
