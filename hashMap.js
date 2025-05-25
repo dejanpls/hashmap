@@ -61,4 +61,20 @@ export default class hashMap {
 
     return false;
   }
+
+  remove(key) {
+    const index = this.hash(key);
+    const bucket = this.#buckets[index];
+
+    for (let i = 0; i < bucket.length; i++) {
+      const [storedKey, storedValue] = bucket[i];
+
+      if (storedKey === key) {
+        bucket.pop(index);
+        return true;
+      }
+    }
+
+    return false;
+  }
 }
