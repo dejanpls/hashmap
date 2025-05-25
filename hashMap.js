@@ -87,4 +87,8 @@ export default class hashMap {
     }
     return len;
   }
+
+  clear() {
+    this.#buckets = [];
+  }
 }
