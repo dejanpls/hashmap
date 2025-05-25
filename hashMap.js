@@ -91,4 +91,15 @@ export default class hashMap {
   clear() {
     this.#buckets = [];
   }
+
+  keys() {
+    const keys = [];
+    for (let i = 0; i < this.#buckets.length; i++) {
+      for (let j = 0; j < this.#buckets[i].length; j++) {
+        const key = this.#buckets[i][j][0];
+        keys.push(key);
+      }
+    }
+    return keys;
+  }
 }
