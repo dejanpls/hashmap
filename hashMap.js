@@ -77,4 +77,14 @@ export default class hashMap {
 
     return false;
   }
+
+  length() {
+    let len = 0;
+    for (let i = 0; i < this.#buckets.length; i++) {
+      for (let j = 0; j < this.#buckets[i].length; j++) {
+        len++;
+      }
+    }
+    return len;
+  }
 }
