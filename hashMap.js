@@ -35,4 +35,17 @@ export default class hashMap {
 
     bucket.push([key, value]);
   }
+
+  get(key) {
+    const index = this.hash(key);
+    const bucket = this.#buckets[index];
+
+    for (let i = 0; i < bucket.length; i++) {
+      const [storedKey, storedValue] = bucket[i];
+
+      if (storedKey === key) return bucket[i][1];
+    }
+
+    return null;
+  }
 }
