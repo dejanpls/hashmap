@@ -21,6 +21,10 @@ export default class hashMap {
   }
 
   set(key, value) {
+    const threshold = Math.floor(this.#capacity * this.#load_factor);
+
+    if (this.length() > threshold) this.resize();
+
     const index = this.hash(key);
     const bucket = this.#buckets[index];
 
@@ -34,6 +38,7 @@ export default class hashMap {
     }
 
     bucket.push([key, value]);
+    console.log(this.#capacity);
   }
 
   get(key) {
@@ -124,5 +129,19 @@ export default class hashMap {
       }
     }
     return buckets;
+  }
+
+  resize() {
+    this.#capacity *= 2;
+    const buckets = Array.from({ length: this.#capacity }, () => []);
+    const oldBuckets = this.entries();
+
+    oldBuckets.forEach(([key, value]) => {
+      const index = this.hash(key);
+      const bucket = buckets[index];
+      bucket.push([key, value]);
+    });
+
+    this.#buckets = buckets;
   }
 }
