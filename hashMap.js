@@ -113,4 +113,16 @@ export default class hashMap {
     }
     return values;
   }
+
+  entries() {
+    const buckets = [];
+    for (let i = 0; i < this.#buckets.length; i++) {
+      for (let j = 0; j < this.#buckets[i].length; j++) {
+        const key = this.#buckets[i][j][0];
+        const value = this.#buckets[i][j][1];
+        buckets.push([key, value]);
+      }
+    }
+    return buckets;
+  }
 }
