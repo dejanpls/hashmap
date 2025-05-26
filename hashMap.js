@@ -38,7 +38,6 @@ export default class hashMap {
     }
 
     bucket.push([key, value]);
-    console.log(this.#capacity);
   }
 
   get(key) {
