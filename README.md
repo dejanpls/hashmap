@@ -31,8 +31,6 @@ The main class is `HashMap`, which supports the following methods:
 | `values()`        | Returns all the values in an array     |
 | `resize()`        | Double capacity when threshold reached |
 
----
-
 ## Example Usage
 
 ```js
@@ -49,12 +47,12 @@ console.log(map.length()); // ➜ 3
 
 ---
 
-## Building your own hashmap helps you:
+## Building your own hashmap helps you learn:
 
+- Hashing and collisions
 - How dynamic resizing works
-- Understand hashing and collisions
-- Learn object-oriented design in JS
-- Build foundational data structures from scratch
+- Object-oriented design in JS
+- How to build data structures from scratch
 
 ---
 
