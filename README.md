@@ -56,9 +56,7 @@ console.log(map.length()); // ➜ 3
 
 ---
 
-## 🧪 Why Build a Custom HashMap?
-
-Building your own hashmap helps you:
+## Building your own hashmap helps you:
 
 - Understand hashing and collisions
 - Grasp how dynamic resizing works
@@ -67,7 +65,7 @@ Building your own hashmap helps you:
 
 ---
 
-## 📝 Notes
+## Important to Note
 
 - This is a learning project inspired by [The Odin Project](https://www.theodinproject.com/).
 - Built with modern JavaScript (ES2022+), including private class fields (`#`).
