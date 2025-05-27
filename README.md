@@ -1,6 +1,6 @@
 # Custom HashMap Implementation in JavaScript
 
-This project is a **custom-built HashMap** (a key-value data structure) written from scratch in JavaScript. It includes core features like hashing, collision handling, dynamic resizing, and a clean, object-oriented structure — all built without relying on native `Map` or `Object` storage.
+This project is a **custom-built HashMap** (a key-value data structure) written from scratch in JavaScript. It includes core features like hashing, collision handling, dynamic resizing, and a clean, object-oriented structure, all built without relying on native `Map` or `Object` storage.
 
 ## Features
 
