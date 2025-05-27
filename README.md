@@ -4,11 +4,11 @@ This project is a **custom-built HashMap** (a key-value data structure) written 
 
 ## Features
 
-- ✅ Custom hash function
-- ✅ Handles collisions using buckets (separate chaining)
-- ✅ Dynamically resizes based on load factor
-- ✅ Supports setting, getting, checking, and listing keys/values
-- ✅ Fully encapsulated using private class fields
+- Custom hash function
+- Handles collisions using buckets (separate chaining)
+- Dynamically resizes based on load factor
+- Supports setting, getting, checking, and listing keys/values
+- Fully encapsulated using private class fields
 
 ---
 
@@ -16,7 +16,7 @@ This project is a **custom-built HashMap** (a key-value data structure) written 
 
 The main class is `HashMap`, which supports the following methods:
 
-### ✅ Public Methods
+### Public Methods
 
 | Method            | Description                            |
 | ----------------- | -------------------------------------- |
