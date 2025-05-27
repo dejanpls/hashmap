@@ -23,7 +23,6 @@ The main class is `HashMap`, which supports the following methods:
 | `set(key, value)` | Inserts or updates a key-value pair    |
 | `get(key)`        | Retrieves a value by key               |
 | `has(key)`        | Checks if a key exists                 |
-| `remove(key)`     | Removes a key-value pair (optional)    |
 | `length()`        | Returns total number of entries        |
 | `clear()`         | Returns all entries from the array     |
 | `remove(key)`     | Removes a key-value pair (optional)    |
@@ -31,12 +30,6 @@ The main class is `HashMap`, which supports the following methods:
 | `keys()`          | Returns all the keys in an array       |
 | `values()`        | Returns all the values in an array     |
 | `resize()`        | Double capacity when threshold reached |
-
-### Internal Features
-
-- **Hashing:** Uses a polynomial rolling hash with a prime multiplier.
-- **Buckets:** Stores key-value pairs in nested arrays to handle collisions.
-- **Resizing:** Automatically doubles capacity when the load factor is exceeded, rehashing all entries.
 
 ---
 
@@ -58,8 +51,8 @@ console.log(map.length()); // ➜ 3
 
 ## Building your own hashmap helps you:
 
+- How dynamic resizing works
 - Understand hashing and collisions
-- Grasp how dynamic resizing works
 - Learn object-oriented design in JS
 - Build foundational data structures from scratch
 
